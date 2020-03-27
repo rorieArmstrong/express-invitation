@@ -28,9 +28,24 @@ app.post("/card", (req, res, next) => {
     let receivedEvent = req.body.event;
     let receivedMessage = req.body.msg;
     
-    res.send(`<h3>${receivedGreeting}</h3><br>
-    <img class="image" src="https://source.unsplash.com/featured/800x600/?{${receivedEvent}}" alt="${receivedEvent} image"/><br>
-    <p>${receivedMessage}</p>`);
+    res.send(`<head><style>body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        justify-content: center;
+        background-color: navy;
+        color: whitesmoke;
+    }
+    img{
+        width: 750px;
+        display: flex;
+        align-self: center;
+    }</style></head>
+    <body>
+    <h3>${receivedGreeting}</h3><br>
+    <img class="image" src="https://source.unsplash.com/featured/400x300/?{${receivedEvent}}" alt="${receivedEvent} image"/><br>
+    <p>${receivedMessage}</p></body>`);
 });
 
 app.listen(PORT, () => {
