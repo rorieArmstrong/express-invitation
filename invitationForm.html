@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and APIs</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"/>
+</head>
+<body>
+    <article id="writing">
+        <h2>Birthday Card</h2>
+        <form action="http://localhost:4001/card" method="POST">  
+    
+            <div class="container"> 
+
+                <label><b>Greeting</b></label> 
+                <input type="text" placeholder="Enter Greeting" id="greet" name="greet" required> 
+
+                <div id="radio">
+                    <h3>Type of event</h3>
+                    <input type="radio" id="Mothers" name="event" value="Mothers" checked>
+                    <label for="Mothers">Mothers Day</label><br>
+                    <input type="radio" id="Birthday" name="event" value="Birthday">
+                    <label for="Birthday">Birthday</label><br>
+                    <input type="radio" id="anniversary" name="event" value="anniversary">
+                    <label for="anniversary">Anniversary</label><br><br>
+
+                </div>
+                
+                <label><b>Message</b></label> 
+                <input type="text" placeholder="Enter Message" id="msg" name="msg" required> 
+    
+                <button type="submit" id="sumbitForm" value="submit">Submit</button>  
+            </div> 
+        </form>
+    </article>
+</body>
+</html>
