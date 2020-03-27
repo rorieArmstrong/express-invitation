@@ -18,7 +18,7 @@ app.post("/reversed-string", (req, res, next) => {
     }
 });*/
 
-app.get('node-express\views\index.html', (req, res) => {
+app.get('node-express\views\informationForm.html', (req, res) => {
     
 });
 
