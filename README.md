@@ -5,5 +5,6 @@ creating and handling server requests
 ### What challenges I/we overcame
 Outputing the result of the data
 ### What I/we struggled with
+Getting node to co-operate.
 ### What I/we would do differently next time
 Read through documentation first
