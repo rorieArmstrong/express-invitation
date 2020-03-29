@@ -18,8 +18,8 @@ app.post("/reversed-string", (req, res, next) => {
     }
 });*/
 
-app.get('node-express\views\informationForm.html', (req, res) => {
-    
+app.get('/', (req, res) => {
+    res.sendfile("views\\invitationForm.html");
 });
 
 app.post("/card", (req, res, next) => {
@@ -44,7 +44,7 @@ app.post("/card", (req, res, next) => {
     }</style></head>
     <body>
     <h3>${receivedGreeting}</h3><br>
-    <img class="image" src="https://source.unsplash.com/featured/400x300/?{${receivedEvent}}" alt="${receivedEvent} image"/><br>
+    <img class="image" src="https://source.unsplash.com/featured/400x300/?{${receivedEvent}},{celebration}" alt="${receivedEvent} image"/><br>
     <p>${receivedMessage}</p></body>`);
 });
 
